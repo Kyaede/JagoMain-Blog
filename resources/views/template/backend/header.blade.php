@@ -1,4 +1,4 @@
-<div class="hero gap-56 p-50 my-7 ">
+<div class="hero gap-56 p-50 my-7">
     <nav class="flex justify-center gap-7">
         <h2 class="logo justify-items-center">
             <img src="{{ url('../storage/Assets/beluga 3.png') }}" alt="logo" height="40px" width="30px" />
@@ -7,13 +7,13 @@
             <li><a href="#course">Articles</a></li>
             <li><a href="#content">Users</a></li>
             <li><a href="#our">Statistik</a></li>
-            <div class="login">
+            <li>
                 <form action="{{ route('logout') }}" method="POST" class="dflex" role="search">
-                <li><a href="{{ route('logout') }}">Logout</a></li>
-                @csrf
-                @method('DELETE')
+                    <a href="#" onclick="event.preventDefault(); this.closest('form').submit();">Logout</a>
+                    @csrf
+                    @method('DELETE')
                 </form>
-            </div>
+            </li>
         </ul>
     </nav>
 </div>

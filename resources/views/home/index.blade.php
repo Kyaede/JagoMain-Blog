@@ -11,7 +11,7 @@
                     <img class="w-4 h-4" src="{{ url('../storage/Assets/home.svg') }}" alt="">
                 </button>
                 <h1 class="font-bold text-[40px] leading-tight lg:text-left sm:justify-center sm:text-center ">Ingin
-                    <span class="text-sky-500">Jago Main</span> Game ?
+                    <span class="text-pink1">Jago Main</span> Game ?
                 </h1>
                 <button>Get Started</button>
             </div>
@@ -72,4 +72,5 @@
         </div>
     </div>
 </section>
+@include('template/footer')
 @endsection

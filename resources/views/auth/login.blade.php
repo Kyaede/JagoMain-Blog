@@ -39,13 +39,12 @@
                 </div>
                 <div class="mt-4">
                     <div class="flex justify-between">
-                        <label class="block text-gray-700 @error('password')is-invalid @enderror text-sm font-bold mb-2"
-                            name="password" value="{{ old('password') }}">Password</label>
+                        <label class="block text-gray-700 @error('password')is-invalid @enderror text-sm font-bold mb-2">Password</label>
                         <a href="#" class="text-xs text-gray-500">Forget Password?</a>
                     </div>
                     <input
                         class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none"
-                        type="password">
+                        type="password" name="password" value="{{ old('password') }}">
                 </div>
                 <div class="mt-8">
                     <button type="submit"
