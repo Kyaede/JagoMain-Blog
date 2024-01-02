@@ -9,7 +9,7 @@
         <!--Tailwind-->
     @vite('resources/css/app.css')
   </head>
-  <body>
+  <body class="">
 @yield('content')
   </body>
 </html>
